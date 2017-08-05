@@ -1,6 +1,12 @@
 @import "../../bower_components/normalize-css/normalize";
 @import "lib/reboot";
-
 @import 'lib/bootstrap';
-
 @import "../../bower_components/slick-carousel/slick/slick";
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
