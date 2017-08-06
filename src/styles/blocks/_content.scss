@@ -1,0 +1,24 @@
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    background-color: $bgContent;
+    &::before, &::after {
+        width: 160rem;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        content: '';
+        background-color: inherit;
+    }
+    &::before {
+        left: 100%;
+    }
+    &::after {
+        right: 100%;
+    }
+}
+
+.content-white {
+    background-color: $white;
+}
