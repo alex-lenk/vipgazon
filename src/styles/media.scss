@@ -56,6 +56,10 @@
     .nav-tabs {
         @include font-size(20px);
     }
+    
+    .wrapper {
+        overflow-x: hidden;
+    }
 }
 
 @include from('m') {
@@ -193,6 +197,10 @@
 }
 
 @include to('s') {
+    .menu-second {
+        display: none;
+    }
+    
     .header-logo {
         text-align: center;
     }
@@ -302,5 +310,9 @@
     .footer-logo {
         margin-bottom: 30px;
         text-align: center;
+    }
+    
+    .bg-full::after, .bg-full::before {
+        display: none;
     }
 }
