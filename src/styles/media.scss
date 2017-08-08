@@ -163,6 +163,10 @@
 }
 
 @include at('s') {
+    .lawn-item-title {
+        min-height: 56px;
+    }
+    
     .video, .review {
         .row {
             justify-content: center;
