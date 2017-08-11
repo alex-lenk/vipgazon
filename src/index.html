@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
 //= template/head.html
-<body>
+<body class="home">
 <div class="wrapper">
     //= template/header.html
 
@@ -80,12 +80,22 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="modal-title">Заказать звонок</div>
+        <form class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-title">Заказать звонок</div>
 
+                <div class="ui-group">
+                    <input type="text" class="ui-field hide-placeholder" placeholder="Укажите Ваше имя">
+                </div>
 
-        </div>
+                <div class="ui-group">
+                    <input type="tel" class="ui-field phone-mask" placeholder="+7(___) ___-____">
+                </div>
+
+                <button class="btn btn-green"><span>Жду звонка</span></button>
+            </div>
+        </form>
     </div>
 </div>
 

@@ -64,15 +64,29 @@ footer {
     }
 }
 
+.link-active {
+    padding-left: 20px;
+    display: inline-block;
+    color: $yellow;
+    + .arrow {
+        fill: $yellow;
+    }
+}
+
+.footer-contacts {
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: #d9f2ff;
+    }
+}
+
 .footer-contacts-phone {
     display: flex;
     align-items: center;
     @include font-size(24px);
     .phone-call {
-        width: 20px;
-        height: 20px;
         margin-right: 17px;
-        fill: #d9f2ff;
     }
 }
 
@@ -82,10 +96,7 @@ footer {
     display: flex;
     align-items: center;
     .clock {
-        width: 19px;
-        height: 19px;
         margin: 0 25px 0 2px;
-        fill: #d9f2ff;
     }
 }
 
@@ -93,11 +104,8 @@ footer {
     padding-left: 40px;
     position: relative;
     .location {
-        width: 20px;
-        height: 20px;
         margin-top: -8px;
         margin-right: 10px;
-        fill: #d9f2ff;
         position: absolute;
         top: 50%;
         left: 0;

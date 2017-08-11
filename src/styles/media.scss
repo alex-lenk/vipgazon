@@ -60,6 +60,40 @@
     .wrapper {
         overflow-x: hidden;
     }
+    
+    .bg-full {
+        &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 150rem;
+            top: 0;
+            background-color: inherit;
+        }
+        &::before {
+            left: 100%;
+        }
+        &::after {
+            right: 100%;
+        }
+    }
+    .content {
+        &::before, &::after {
+            width: 160rem;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            content: '';
+            background-color: inherit;
+        }
+        &::before {
+            left: 100%;
+        }
+        &::after {
+            right: 100%;
+        }
+    }
 }
 
 @include from('m') {

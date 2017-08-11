@@ -155,19 +155,4 @@ button, input, select, textarea {
 
 .bg-full {
     position: relative;
-    &::after, &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 150rem;
-        top: 0;
-        background-color: inherit;
-    }
-    &::before {
-        left: 100%;
-    }
-    &::after {
-        right: 100%;
-    }
 }
